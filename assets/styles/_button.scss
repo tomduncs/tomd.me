@@ -1,0 +1,36 @@
+.Button {
+	position: relative;
+	background: #444;
+	padding: 9px 13px;
+	color: $white;
+	outline: none;
+	border:none;
+	border-radius: 4px;
+	line-height: 1;
+	transition: color, 0.2s;
+	
+	&:after {
+		font-family: 'FontAwesome';
+	    content: "\f103";
+	    display: block;
+	    font-size: 20px;
+	    font-weight: 100;
+	    line-height: 0.7;
+	    transition: bottom, 0.2s;
+	    position: absolute;
+	    width: 100%;
+	    bottom: -22px;
+	    left: 0;
+	    color: #555;
+	}
+
+	&:hover {
+		background: #666;
+		color: $white;
+
+		&:after {
+			bottom: -27px;
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+.Work {
+	&-grid {
+		&-item {
+			width: 31%;
+			margin-right: 3.3%;
+			margin-bottom: 20px;
+			float: left;
+			border: 4px solid $white;
+			box-shadow: 0 0 15px #DDD;
+			border-radius: 10%;
+			overflow: hidden;
+			transition: box-shadow, 0.3s;
+
+			@media (min-width: 521px) {
+				&:nth-of-type(3n) {
+					margin-right: 0;
+				}
+			}
+
+			&:hover {
+				box-shadow: 0 0 20px #B3B3B3;
+			}
+
+			@media (max-width: 520px) {
+				width: 48%;
+
+				&:nth-of-type(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

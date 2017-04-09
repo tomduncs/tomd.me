@@ -1,0 +1,38 @@
+.Contact {
+	text-align: center;
+	padding-top: 100px;
+
+	.sociallink img  {
+		margin-top: 10px;
+	    padding: 5px 18px 5px 18px;
+		opacity: 0.81;
+		height: 75px;
+		border: 0;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		@media (max-width: 520px) {
+			height: 60px;
+			padding: 5px;
+		}
+		@media (max-width: 350px) {
+			height: 55px;
+			padding: 5px;
+		}
+	}
+
+	.sociallink a {
+		border-bottom: 0;
+	}
+
+	h2 {
+		@media (max-width: 520px) {
+			font-size: 1.25em;
+		}
+		@media (max-width: 360px) {
+			font-size: 1.1em;
+		}
+	}
+}

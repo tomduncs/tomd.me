@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/assets/fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@import "normalise";
+@import "variables";
+@import "global";
+@import "button";
+@import "Nav";
+@import "Header";
+@import "section";
+@import "Home";
+@import "About";
+@import "Work";
+@import "Contact";

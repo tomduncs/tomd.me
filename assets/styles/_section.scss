@@ -1,0 +1,71 @@
+section {
+	position: relative;
+	border-bottom: 1px solid #D1D1D1;
+
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	@media (min-width: 920px) {
+		height: 100vh;
+	}
+
+	@media (max-width: 919px) {
+		padding: 65px 0;
+		min-height: 100vh;
+	}
+
+	.section-content {
+		&:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		@media (min-width: 920px) {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		h1 {
+			margin-top: 0;
+			margin-bottom: 0.25em;
+		}
+
+		&-left {
+			@media (min-width: 920px) {
+				width: 50%;
+				float: left;
+				padding-right: 0em;
+			}
+		}
+
+		&-right {
+			@media (min-width: 920px) {
+				width: 50%;
+				float: left;
+				padding-left: 2em;
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.button-container {
+		text-align: center;
+    	clear: both;
+    	@media (max-width: 920px) {
+    		margin-top: 30px;
+    	}
+	}
+
+	.Button {
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

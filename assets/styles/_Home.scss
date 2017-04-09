@@ -1,0 +1,32 @@
+.Home {
+	text-align: center;
+	.headshot {
+		box-shadow: 0 0px 15px #CCC;
+		border: 5px solid $white;
+		border-radius: 100%;
+		width: 200px;
+		margin-bottom: 15px;
+
+		@media (max-width: 520px) {
+			width: 150px;
+		}
+	}
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	h2 {
+		margin-top: 0.5em;
+	}
+
+	.section-content {
+		@media (max-width: 919px) {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		@media (max-width: 620px) {
+			margin-top: 30px;
+		}
+	}
+}
